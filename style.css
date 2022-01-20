@@ -1,0 +1,142 @@
+/* mobile display */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  color:hsl(0, 0%, 95%);
+  margin: 3rem 0;
+}
+p{
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family:'Lexend Deca',sans-serif ;
+  font-size: 15px;
+}
+h1{
+  color:hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', sans-serif;
+  margin-top: 30px;
+  font-size: 40px;
+  text-transform: uppercase;
+/* links 
+only spans and a used on the html code */
+}
+span {
+  color: rgb(168, 168, 168);
+  margin-left: 75px;
+  position: relative;
+  top: 20px;
+}
+a{
+  color: rgb(90, 90, 90);
+}
+a:hover{
+  color: rgb(168, 168, 168);;
+}
+/* cards and their content */
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#sedan-card{
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 2% 2% 0 0; 
+}
+#suv-card{
+  background-color: hsl(184, 100%, 22%);
+}
+#luxury-card{
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 2% 2%;
+}
+.cards{
+  width: 70%;
+  padding: 0 3rem;
+  padding-bottom: 50px;
+}
+.main-txt{
+  margin-top: 25px;
+  text-align: left;
+}
+.car-icons{
+  margin-top: 50px;
+}
+/* buttons */
+.button-card{
+  border-radius: 28px;
+  font-family: 'Lexend Deca',sans-serif ; 
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  margin-top: 20px;
+  border-color: #fff;
+  background-color: #fff;
+}
+
+#button-sedan{
+  color: hsl(31, 77%, 52%);
+}
+#button-sedan:hover{
+  color: #fff;
+  background-color:hsl(31, 77%, 52%) ;
+}
+#button-suv{
+  color: hsl(184, 100%, 22%);
+}
+#button-suv:hover{
+  color: #fff;
+  background-color:hsl(184, 100%, 22%);
+}
+#button-luxury{
+ color:hsl(179, 100%, 13%);
+}
+#button-luxury:hover{
+  color: #fff;
+  background-color: hsl(179, 100%, 13%);
+}
+/* desktop display */
+@media screen and (min-width:1199px){
+  
+  .container{
+    flex-direction: row;
+  }
+  /* cards */
+  #sedan-card{
+    border-radius: 2% 0 0 2%;
+  }
+  #luxury-card{
+    border-radius: 0 2% 2% 0;
+  }
+  .cards{
+    width: 25%;
+    padding: 0 55px 50px 60px;
+    position: relative;
+    left: 180px;
+    top: 200px;
+  }
+  .button-card{
+    margin-top: 80px;
+    width: 80%;
+  }
+  /* links */
+  span{
+    position: relative;
+    top: 270px;
+    left: 730px;
+  }
+}
+/* tablet display */
+@media (min-width:768px) and (max-width:1198px) {
+    .container{
+      flex-direction: row;
+    }
+    #sedan-card{
+      border-radius: 2% 0 0 2%;
+    }
+    #luxury-card{
+      border-radius: 0 2% 2% 0;
+    }
+
+}
+
